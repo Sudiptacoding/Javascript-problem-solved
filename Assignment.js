@@ -69,26 +69,27 @@ console.log(data(str = "ssssss","ww","dfasdasdasd"));
 
 
 // Animal count
-function brickCalculator(n){
-    if(n>=1&&n<=10){
-        var total=n*1;
-        var total1 =total*50;
-        return total1;
-      }
-    else if(n>=11 && n<=20){
-        var some=n-10;
-        var total2=some*1;
-        var total3=total2*100;
-        return total3+500;
-    }  
-    else if(n>20) {
-        var some1=n-20
-        var total4=some1*1;
-        var total5=total4*300;
-        return total5+1500+500;
-    }
- }
-var output=brickCalculator(12);
-console.log(output);
+function distensww(distens){
+    var animal=0;
+if(distens<=10){
+    animal=distens*50;
+}
+else if(distens<=20){
+    var firstpart=10*50;
+    var deep=distens-10;
+    var secendPart=deep*100;
+    animal=firstpart+secendPart;
+}
+else{
+    var firstpart=10*50;
+    var secendPart=10*100;
+    var deep1=distens-20;
+    var thirdPart=deep1*300;
+    animal=firstpart+secendPart+thirdPart;
+}
+return animal;
+}
+var result=distensww(22);
+console.log(result)
 
 
